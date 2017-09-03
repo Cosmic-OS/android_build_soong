@@ -554,5 +554,17 @@ func (c *config) IntegerOverflowDisabledForPath(path string) bool {
 }
 
 func (c *deviceConfig) BoardUsesQTIHardware() bool {
-	return Bool(c.config.ProductVariables.BoardUsesQTIHardware)
+	return Bool(c.config.ProductVariables.Cosmic.BoardUsesQTIHardware)
+}
+
+func (c *deviceConfig) QTIAudioPath() string {
+	return String(c.config.ProductVariables.Cosmic.QTIAudioPath)
+}
+
+func (c *deviceConfig) QTIDisplayPath() string {
+	return String(c.config.ProductVariables.Cosmic.QTIDisplayPath)
+}
+
+func (c *deviceConfig) QTIMediaPath() string {
+	return String(c.config.ProductVariables.Cosmic.QTIMediaPath)
 }

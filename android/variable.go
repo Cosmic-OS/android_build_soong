@@ -174,6 +174,11 @@ type productVariables struct {
 
 	DeviceKernelHeaders []string `json:",omitempty"`
 
+	// Pathmap variables
+	QTIAudioPath *string `json:",omitempty"`
+	QTIDisplayPath *string `json:",omitempty"`
+	QTIMediaPath *string `json:",omitempty"`
+
 	// include cosmic variables
 	Cosmic android_cosmic.ProductVariables
 }
