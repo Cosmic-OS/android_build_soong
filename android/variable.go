@@ -98,7 +98,7 @@ type variableProperties struct {
 		}
 
 		// include cosmic variables
-		*android.Product_variables
+		Cosmic android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -174,7 +174,7 @@ type productVariables struct {
 	DeviceKernelHeaders []string `json:",omitempty"`
 
 	// include cosmic variables
-	*android.ProductVariables
+	Cosmic android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
