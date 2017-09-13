@@ -99,6 +99,7 @@ type variableProperties struct {
 
 		// include cosmic variables
 		Cosmic android_cosmic.Product_variables
+		Qualcomm android_cosmic.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -181,6 +182,7 @@ type productVariables struct {
 
 	// include cosmic variables
 	Cosmic android_cosmic.ProductVariables
+	Qualcomm android_cosmic.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
