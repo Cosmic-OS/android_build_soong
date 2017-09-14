@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"cosmic/soong/android"
+	"cosmic/soong/android_cosmic"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -98,7 +98,7 @@ type variableProperties struct {
 		}
 
 		// include cosmic variables
-		Cosmic android.Product_variables
+		Cosmic android_cosmic.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -174,7 +174,7 @@ type productVariables struct {
 	DeviceKernelHeaders []string `json:",omitempty"`
 
 	// include cosmic variables
-	Cosmic android.ProductVariables
+	Cosmic android_cosmic.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
