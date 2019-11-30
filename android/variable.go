@@ -20,8 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"cosmic
-/soong/android"
+	"cosmic/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
